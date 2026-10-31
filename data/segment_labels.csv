@@ -1,0 +1,9 @@
+recording,start_s,end_s,activity
+test_01_enock,1.5,12.5,still
+test_01_enock,16.0,23.0,standing
+test_01_enock,25.5,37.0,walking
+test_01_enock,38.5,44.0,jumping
+test_02_enock,1.0,9.5,still
+test_02_enock,13.0,17.0,standing
+test_02_enock,18.5,28.0,jumping
+test_02_enock,29.5,41.0,walking

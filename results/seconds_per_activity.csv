@@ -1,0 +1,5 @@
+activity,train,test,total,single_activity_files
+standing,100.64,11.0,111.64,18
+walking,73.74,23.0,96.74,15
+jumping,75.4,15.0,90.4,15
+still,72.54,19.5,92.04,15
