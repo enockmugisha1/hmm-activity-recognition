@@ -12,6 +12,32 @@ results/                         written by the notebook: every table for the re
 requirements.txt
 ```
 
+## Results (this submission)
+
+The dataset is **65 labelled recordings** from a single contributor, collected on **two phones** and harmonised to a common 50 Hz: a Samsung SM-G973F logging a true **100 Hz** (the 63 single-activity training clips) and a Google Pixel 6 delivering **~55 Hz** (the two unseen ~45 s test recordings). Every activity clears the 90 s minimum.
+
+A from-scratch Gaussian-emission HMM (forward–backward, Baum–Welch, Viterbi) reaches **81.4 % accuracy** on the two unseen Pixel 6 recordings — different device, different session from all training data.
+
+| Activity | Sensitivity | Specificity |
+|---|---|---|
+| walking | 1.00 | 0.92 |
+| still | 0.95 | 1.00 |
+| standing | 0.73 | 0.85 |
+| jumping | 0.44 | 1.00 |
+
+- Baum–Welch converged in **5 iterations** (train log-likelihood −75.8 → −66.8, stopping threshold `BW_TOL`).
+- The temporal model beats classifying each window independently: **75.7 % → 81.4 %**, driven by the Baum–Welch-refined transition matrix.
+- Per test file: test 1 = **91.7 %**, test 2 = **70.6 %**. Jumping is the hardest activity (confused with standing at the steady start/end of each jump burst, blunted by the Pixel's lower sampling rate).
+
+**Data-collection videos** (whole body + face, holding the phone while recording):
+
+| Activity | Link |
+|---|---|
+| Standing | https://youtube.com/shorts/MuexVpJiZWw |
+| Walking | https://youtube.com/shorts/fzsP2rYffkM |
+| Jumping | https://youtube.com/shorts/NbohnmOFKUk |
+| Still | https://youtube.com/shorts/TWcEYuwgiLQ |
+
 ## 1. Recording the data
 
 **Phone placement.** Everyone holds the phone the same way, because orientation is one of the features. For standing, walking and jumping: phone in the right hand, upright (top edge pointing up), screen facing your body, at waist level. For still: phone flat on a table, screen up, nobody touching the table.
