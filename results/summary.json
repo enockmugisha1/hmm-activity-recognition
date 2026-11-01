@@ -1,5 +1,5 @@
 {
-  "n_recordings": 65,
+  "n_recordings": 86,
   "n_members": 1,
   "target_hz": 50,
   "window_s": 2.0,
@@ -14,18 +14,18 @@
     "spec_entropy"
   ],
   "cov_type": "diag",
-  "bw_iterations": 5,
+  "bw_iterations": 4,
   "bw_converged": true,
-  "test_accuracy": 0.8142857142857143,
+  "test_accuracy": 0.9,
   "facts": [
-    "Data: 65 cleaned recordings from 1 members; 2 unseen test recordings with 70 labelled windows.",
+    "Data: 86 cleaned recordings from 1 members; 2 unseen test recordings with 70 labelled windows.",
     "Sampling rates (accelerometer, median per member): enock 100 Hz; all resampled to 50 Hz.",
-    "Easiest activity on the test data: walking (sensitivity 1.00); hardest: jumping (sensitivity 0.44).",
-    "Most frequent error: true jumping predicted as standing (8 windows, 50% of jumping).",
-    "Accuracy: train 0.987, test 0.814 (gap +0.172).",
-    "Adding transitions (Viterbi) vs classifying each window alone: test accuracy 0.757 -> 0.814.",
-    "Baum-Welch vs supervised estimate (both Viterbi): test accuracy 0.757 -> 0.814; Baum-Welch converged in 5 iterations.",
-    "Expected time in each state before switching: standing 18.4 s, walking 14.1 s, jumping 13.7 s, still 13.3 s.",
-    "Most likely switches: still -> standing 0.025; still -> walking 0.025; still -> jumping 0.025."
+    "Easiest activity on the test data: walking (sensitivity 1.00); hardest: standing (sensitivity 0.73).",
+    "Most frequent error: true standing predicted as walking (3 windows, 27% of standing).",
+    "Accuracy: train 0.986, test 0.900 (gap +0.086).",
+    "Adding transitions (Viterbi) vs classifying each window alone: test accuracy 0.914 -> 0.900.",
+    "Baum-Welch vs supervised estimate (both Viterbi): test accuracy 0.914 -> 0.900; Baum-Welch converged in 4 iterations.",
+    "Expected time in each state before switching: standing 26.4 s, walking 31.4 s, jumping 29.7 s, still 28.2 s.",
+    "Most likely switches: standing -> still 0.019; still -> standing 0.012; still -> walking 0.012."
   ]
 }

@@ -14,6 +14,11 @@ enock,jumping_12,train,jumping,4.92,100.0,100.0,0.079,TotalAcceleration,SM-G973F
 enock,jumping_13,train,jumping,4.86,100.0,100.0,0.06,TotalAcceleration,SM-G973F / android,True,data/clean/enock/jumping_13.csv
 enock,jumping_14,train,jumping,4.94,100.0,100.0,0.05,TotalAcceleration,SM-G973F / android,True,data/clean/enock/jumping_14.csv
 enock,jumping_15,train,jumping,4.76,100.0,100.0,0.013,TotalAcceleration,SM-G973F / android,True,data/clean/enock/jumping_15.csv
+enock,jumping_21,train,jumping,12.54,441.0,441.0,0.004,TotalAcceleration,Pixel 6 / android,True,data/clean/enock/jumping_21.csv
+enock,jumping_22,train,jumping,13.12,441.0,441.0,0.003,TotalAcceleration,Pixel 6 / android,True,data/clean/enock/jumping_22.csv
+enock,jumping_23,train,jumping,9.78,441.0,441.0,0.002,TotalAcceleration,Pixel 6 / android,True,data/clean/enock/jumping_23.csv
+enock,jumping_24,train,jumping,13.6,441.0,441.0,0.002,TotalAcceleration,Pixel 6 / android,True,data/clean/enock/jumping_24.csv
+enock,jumping_25,train,jumping,11.48,441.0,441.0,0.002,TotalAcceleration,Pixel 6 / android,True,data/clean/enock/jumping_25.csv
 enock,standing_01,train,standing,3.96,100.0,100.0,0.013,TotalAcceleration,SM-G973F / android,True,data/clean/enock/standing_01.csv
 enock,standing_02,train,standing,4.18,100.0,100.0,0.013,TotalAcceleration,SM-G973F / android,True,data/clean/enock/standing_02.csv
 enock,standing_03,train,standing,4.46,100.0,100.0,0.013,TotalAcceleration,SM-G973F / android,True,data/clean/enock/standing_03.csv
@@ -32,6 +37,11 @@ enock,standing_15,train,standing,4.76,100.0,100.0,0.014,TotalAcceleration,SM-G97
 enock,standing_16,train,standing,11.04,55.1,55.1,0.018,TotalAcceleration,Pixel 6 / android,True,data/clean/enock/standing_16.csv
 enock,standing_17,train,standing,10.76,55.1,55.1,0.018,TotalAcceleration,Pixel 6 / android,True,data/clean/enock/standing_17.csv
 enock,standing_18,train,standing,12.14,55.1,55.1,0.018,TotalAcceleration,Pixel 6 / android,True,data/clean/enock/standing_18.csv
+enock,standing_21,train,standing,11.96,441.0,441.0,0.002,TotalAcceleration,Pixel 6 / android,True,data/clean/enock/standing_21.csv
+enock,standing_22,train,standing,12.06,441.0,441.0,0.004,TotalAcceleration,Pixel 6 / android,True,data/clean/enock/standing_22.csv
+enock,standing_23,train,standing,11.86,441.0,441.0,0.004,TotalAcceleration,Pixel 6 / android,True,data/clean/enock/standing_23.csv
+enock,standing_24,train,standing,11.96,441.0,441.0,0.002,TotalAcceleration,Pixel 6 / android,True,data/clean/enock/standing_24.csv
+enock,standing_25,train,standing,11.68,441.0,441.0,0.002,TotalAcceleration,Pixel 6 / android,True,data/clean/enock/standing_25.csv
 enock,still_01,train,still,4.66,100.0,100.0,0.014,TotalAcceleration,SM-G973F / android,True,data/clean/enock/still_01.csv
 enock,still_02,train,still,5.06,100.0,100.0,0.013,TotalAcceleration,SM-G973F / android,True,data/clean/enock/still_02.csv
 enock,still_03,train,still,4.26,100.0,100.0,0.012,TotalAcceleration,SM-G973F / android,True,data/clean/enock/still_03.csv
@@ -47,6 +57,11 @@ enock,still_12,train,still,5.36,100.0,100.0,0.013,TotalAcceleration,SM-G973F / a
 enock,still_13,train,still,5.36,100.0,100.0,0.013,TotalAcceleration,SM-G973F / android,True,data/clean/enock/still_13.csv
 enock,still_14,train,still,4.9,100.0,100.0,0.141,TotalAcceleration,SM-G973F / android,True,data/clean/enock/still_14.csv
 enock,still_15,train,still,4.06,100.0,100.0,0.013,TotalAcceleration,SM-G973F / android,True,data/clean/enock/still_15.csv
+enock,still_21,train,still,12.14,441.0,441.0,0.004,TotalAcceleration,Pixel 6 / android,True,data/clean/enock/still_21.csv
+enock,still_22,train,still,11.68,441.0,441.0,0.002,TotalAcceleration,Pixel 6 / android,True,data/clean/enock/still_22.csv
+enock,still_23,train,still,11.38,441.0,441.0,0.002,TotalAcceleration,Pixel 6 / android,True,data/clean/enock/still_23.csv
+enock,still_24,train,still,12.06,441.0,441.0,0.002,TotalAcceleration,Pixel 6 / android,True,data/clean/enock/still_24.csv
+enock,still_25,train,still,12.06,441.0,441.0,0.002,TotalAcceleration,Pixel 6 / android,True,data/clean/enock/still_25.csv
 enock,test_01_enock,test,mixed,46.8,55.1,55.1,0.043,TotalAcceleration,Pixel 6 / android,True,data/clean/enock/test_01_enock.csv
 enock,test_02_enock,test,mixed,42.08,55.1,55.1,0.041,TotalAcceleration,Pixel 6 / android,True,data/clean/enock/test_02_enock.csv
 enock,walking_01,train,walking,4.86,100.0,100.0,0.013,TotalAcceleration,SM-G973F / android,True,data/clean/enock/walking_01.csv
@@ -64,3 +79,9 @@ enock,walking_12,train,walking,4.66,100.0,100.0,0.013,TotalAcceleration,SM-G973F
 enock,walking_13,train,walking,5.92,100.0,100.0,0.053,TotalAcceleration,SM-G973F / android,True,data/clean/enock/walking_13.csv
 enock,walking_14,train,walking,5.06,100.0,100.0,0.013,TotalAcceleration,SM-G973F / android,True,data/clean/enock/walking_14.csv
 enock,walking_15,train,walking,5.06,100.0,100.0,0.013,TotalAcceleration,SM-G973F / android,True,data/clean/enock/walking_15.csv
+enock,walking_21,train,walking,10.32,441.0,441.0,0.002,TotalAcceleration,Pixel 6 / android,True,data/clean/enock/walking_21.csv
+enock,walking_22,train,walking,10.72,441.0,441.0,0.004,TotalAcceleration,Pixel 6 / android,True,data/clean/enock/walking_22.csv
+enock,walking_23,train,walking,11.66,441.0,441.0,0.002,TotalAcceleration,Pixel 6 / android,True,data/clean/enock/walking_23.csv
+enock,walking_24,train,walking,12.42,441.0,441.0,0.003,TotalAcceleration,Pixel 6 / android,True,data/clean/enock/walking_24.csv
+enock,walking_25,train,walking,11.1,441.0,441.0,0.004,TotalAcceleration,Pixel 6 / android,True,data/clean/enock/walking_25.csv
+enock,walking_26,train,walking,10.92,441.0,441.0,0.002,TotalAcceleration,Pixel 6 / android,True,data/clean/enock/walking_26.csv

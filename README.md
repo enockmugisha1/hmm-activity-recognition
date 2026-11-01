@@ -14,20 +14,20 @@ requirements.txt
 
 ## Results (this submission)
 
-The dataset is **65 labelled recordings** from a single contributor, collected on **two phones** and harmonised to a common 50 Hz: a Samsung SM-G973F logging a true **100 Hz** (the 63 single-activity training clips) and a Google Pixel 6 delivering **~55 Hz** (the two unseen ~45 s test recordings). Every activity clears the 90 s minimum.
+The dataset is **86 labelled recordings** from a single contributor, collected on **two phones** and harmonised to a common 50 Hz: a Samsung SM-G973F logging a steady **100 Hz** and a Google Pixel 6 (whose reported rate ranged ~55–441 Hz depending on load). 84 are single-activity training clips (23 standing, 21 walking, 20 jumping, 20 still); the 2 unseen ~45 s test recordings are on the Pixel 6. Every activity has well over 130 s of training data, comfortably clearing the 90 s minimum.
 
-A from-scratch Gaussian-emission HMM (forward–backward, Baum–Welch, Viterbi) reaches **81.4 % accuracy** on the two unseen Pixel 6 recordings — different device, different session from all training data.
+A from-scratch Gaussian-emission HMM (forward–backward, Baum–Welch, Viterbi) reaches **90.0 % accuracy** on the two unseen Pixel 6 recordings — different device, different session from all training data.
 
 | Activity | Sensitivity | Specificity |
 |---|---|---|
-| walking | 1.00 | 0.92 |
-| still | 0.95 | 1.00 |
-| standing | 0.73 | 0.85 |
-| jumping | 0.44 | 1.00 |
+| walking | 1.00 | 0.90 |
+| jumping | 0.88 | 1.00 |
+| still | 0.90 | 1.00 |
+| standing | 0.73 | 0.97 |
 
-- Baum–Welch converged in **5 iterations** (train log-likelihood −75.8 → −66.8, stopping threshold `BW_TOL`).
-- The temporal model beats classifying each window independently: **75.7 % → 81.4 %**, driven by the Baum–Welch-refined transition matrix.
-- Per test file: test 1 = **91.7 %**, test 2 = **70.6 %**. Jumping is the hardest activity (confused with standing at the steady start/end of each jump burst, blunted by the Pixel's lower sampling rate).
+- Baum–Welch converged in **4 iterations** (train log-likelihood −755.5 → −727.5, stopping threshold `BW_TOL`).
+- With this much training data the Gaussian emissions alone already classify windows well (**91.4 %**); adding the full HMM gives **90.0 %** — comparable, within one window out of 70. The transition model still enforces realistic dwell times (~26–31 s per activity).
+- Per test file: test 1 = **94.4 %**, test 2 = **85.3 %**. Standing is now the hardest activity (a hand-held standing posture occasionally reads as slow walking).
 
 **Data-collection videos** (whole body + face, holding the phone while recording):
 

@@ -1,2 +1,2 @@
 member,device,recordings,acc_hz_median,acc_hz_min,acc_hz_max,gyro_hz_median,acc_source,gravity_in_acc,resampled_to_hz
-enock,SM-G973F / android,65,100.0,55.1,100.0,100.0,TotalAcceleration,True,50
+enock,SM-G973F / android,86,100.0,55.1,441.0,100.0,TotalAcceleration,True,50
